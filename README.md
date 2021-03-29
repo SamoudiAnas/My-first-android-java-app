@@ -28,4 +28,4 @@ The process of building this app was quite enjoyable, however I have ran accros 
 ![alt text](https://github.com/SamoudiAnas/My-first-android-java-app/blob/main/Screenshots/22.PNG)
 
 
-If you want to see more screenshots of the app check /ScreenShots :point_up:
+If you want to see more screenshots of the app check /ScreenShots :point_up_2:
