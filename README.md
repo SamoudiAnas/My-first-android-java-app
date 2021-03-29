@@ -14,13 +14,15 @@ The app is coded with Java 8 on Android Studio, and I have used ~Google Firebase
 The process of building this app was quite enjoyable, however I have ran accros a lot of difficulties but it was worth the pain. It took me about 2 months to finish it , and I'm happy about the result I got.
 
 ## Screenshots
+
 - User Space
+\
 ![alt text](https://github.com/SamoudiAnas/My-first-android-java-app/blob/main/Screenshots/6.PNG)
 \
 - Admin Dashboard
 \
 ![alt text](https://github.com/SamoudiAnas/My-first-android-java-app/blob/main/Screenshots/16.PNG)
-
+\
 - Delivery Man Dashboard
 \
 ![alt text](https://github.com/SamoudiAnas/My-first-android-java-app/blob/main/Screenshots/22.PNG)
