@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/deliveryHome"
+            android:title="Home"
+            android:icon="@drawable/home_icon_of_delivery_man"/>
+        <item
+            android:id="@+id/toDeliver"
+            android:icon="@drawable/delivery_man__1_"
+            android:title="To Deliver" />
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/history"
+            android:title="History of Delivered Commands" />
+        <item
+            android:id="@+id/profileOfDeliveryMan"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/location_icon"
+            android:title="My Location" />
+        <item
+            android:id="@+id/problem"
+            android:title="Problem"
+            android:icon="@drawable/exclamation_mark_in_a_circle"/>
+
+        <item
+            android:id="@+id/deliverymanLogout"
+            android:title="Logout"
+            android:icon="@drawable/logout_icon"/>
+
+    </group>
+</menu>

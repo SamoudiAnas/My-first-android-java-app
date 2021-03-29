@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".GoogleTracking"
+    android:background="@drawable/bg7"
+    >
+
+    <EditText
+        android:layout_width="337dp"
+        android:layout_height="70dp"
+        android:id="@+id/et_source"
+        android:hint="Enter Source Location"
+        android:padding="12dp"
+        android:background="@drawable/rounded_corner_orange"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        />
+    <EditText
+        android:layout_width="337dp"
+        android:layout_height="70dp"
+        android:id="@+id/et_destination"
+        android:hint="Enter Location Destination"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner_orange"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"/>
+
+    <Button
+        android:id="@+id/bt_track"
+        android:layout_width="337dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:text="display track"
+        app:backgroundTint="#fa5d3f" />
+    <!--you have to insert a background for both of Edit text,Don't forget that -->
+
+
+</LinearLayout>

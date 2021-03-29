@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/wishlist"
+            android:icon="@drawable/heart"
+            android:title="Wishlist" />
+        <item
+            android:id="@+id/mycart"
+            android:icon="@drawable/shopping_cart"
+            android:title="Cart" />
+        <item
+            android:id="@+id/myCommands"
+            android:icon="@drawable/cart"
+            android:title="My Commands" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/location_icon"
+            android:title="Location" />
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/login_icon"
+                    android:title="Login" />
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile_icon"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share_icon"
+                android:title="share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rateus_icon"
+                android:title="Rate Us" />
+
+        </menu>
+    </item>
+</menu>

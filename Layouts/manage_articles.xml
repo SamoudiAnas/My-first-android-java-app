@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gw_bg"
+    tools:context=".manage_articles">
+
+    <GridLayout
+        android:id="@+id/manage_articles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="216dp"
+        android:layout_marginBottom="92dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:onClick="addArticle"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/addArticleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="150dp"
+                    android:text="Add an article"
+                    android:textColor="#333"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/right_arrow"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/editArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:clickable="true"
+            android:onClick="editArticle"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/editArticleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/edit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="150dp"
+                    android:text="Edit an article"
+                    android:textColor="#333"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/right_arrow"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/deleteArticle"
+            android:onClick="deteleAnArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/deleteArticleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/delete" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="132dp"
+                    android:text="Delete an article"
+                    android:textColor="#333"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/right_arrow"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="194dp"
+        android:layout_marginRight="194dp"
+        android:layout_marginBottom="508dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            app:srcCompat="@drawable/rectangle_vertical"
+
+
+            tools:ignore="VectorDrawableCompat"
+
+
+            tools:layout_editor_absoluteX="16dp"
+
+            tools:layout_editor_absoluteY="83dp" />
+
+        <TextView
+            android:id="@+id/manageArticles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Manage Articles"
+
+            android:textColor="#19456b"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".admin_dashboard"
+    android:id="@+id/adminDrawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/adminnav_view"
+        app:headerLayout="@layout/adminheader"
+        app:menu="@menu/admin_menu"
+        android:layout_gravity = "start"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/admintoolbar"
+            layout="@layout/admintoolbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="349dp"
+            android:layout_marginEnd="262dp"
+            android:layout_marginRight="262dp"
+            android:layout_marginBottom="353dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Purchases"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="213dp"
+            android:layout_marginBottom="382dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:onClick="goToTodayPurchases"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+
+                tools:ignore="MissingConstraints">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/purchases" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="2"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:onClick="goToDeliveryMan"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+
+                tools:ignore="MissingConstraints">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/delivery_man__1_" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/gridLayout1"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="389dp"
+            android:layout_marginBottom="206dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:onClick="gotoStats"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+
+                tools:ignore="MissingConstraints">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/analytics" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="2"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:onClick="manageArticles"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+
+                tools:ignore="MissingConstraints">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/manage_articles" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--            android:id="@+id/profileImageAdmin"-->
+        <!--            android:layout_width="70dp"-->
+        <!--            android:layout_height="70dp"-->
+        <!--            android:layout_marginStart="83dp"-->
+        <!--            android:layout_marginLeft="83dp"-->
+        <!--            android:layout_marginTop="63dp"-->
+        <!--            android:layout_marginEnd="258dp"-->
+        <!--            android:layout_marginRight="258dp"-->
+        <!--            android:layout_marginBottom="598dp"-->
+        <!--            android:src="@drawable/profile"-->
+        <!--            app:civ_border_color="#FF000000"-->
+        <!--            app:civ_border_width="2dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/admin_name"-->
+        <!--            android:layout_width="185dp"-->
+        <!--            android:layout_height="35dp"-->
+        <!--            android:layout_marginStart="163dp"-->
+        <!--            android:layout_marginLeft="163dp"-->
+        <!--            android:layout_marginTop="83dp"-->
+        <!--            android:layout_marginEnd="63dp"-->
+        <!--            android:layout_marginRight="63dp"-->
+        <!--            android:layout_marginBottom="613dp"-->
+        <!--            android:gravity="left"-->
+        <!--            android:textColor="#fff"-->
+        <!--            android:textSize="55px"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <TextView
+            android:id="@+id/stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="525dp"
+            android:layout_marginEnd="284dp"
+            android:layout_marginRight="284dp"
+            android:layout_marginBottom="177dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Stats"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/manage_articles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="236dp"
+            android:layout_marginLeft="236dp"
+            android:layout_marginTop="525dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="177dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Manage Articles"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="255dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="349dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="353dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Delivery Men"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="121dp"
+            android:layout_marginEnd="191dp"
+            android:layout_marginRight="191dp"
+            android:layout_marginBottom="569dp"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                app:srcCompat="@drawable/rectangle_for_admindashboard"
+
+
+                tools:ignore="VectorDrawableCompat"
+
+
+                tools:layout_editor_absoluteX="16dp"
+
+                tools:layout_editor_absoluteY="83dp" />
+
+            <TextView
+                android:id="@+id/manageArticles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Dashboard"
+
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="83dp" />
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

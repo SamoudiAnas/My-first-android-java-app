@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/product_image"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textColor="#19456B"
+                android:textSize="18dp"
+                android:fontFamily="@font/montserrat_bold"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Store : "
+                    android:textColor="#151515"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+                <TextView
+                    android:id="@+id/productStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Store"
+                    android:textColor="#151515"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity : "
+                    android:textColor="#16c79A"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    />
+
+                <TextView
+                    android:id="@+id/productQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#16c79a"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price Per Piece : "
+                    android:textColor="#6d6d64"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+                <TextView
+                    android:id="@+id/productPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#6d6d64"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_alignParentBottom="true"
+               />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

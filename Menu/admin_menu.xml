@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/adminnav_home"
+            android:title="DashBoard"
+            android:icon="@drawable/dashboard"/>
+
+        <item
+            android:id="@+id/todayPurchases"
+            android:icon="@drawable/smartphone"
+            android:title="Purchases" />
+
+        <item
+            android:id="@+id/dileveryMan"
+            android:icon="@drawable/delivery_man"
+            android:title="Dilevery Men" />
+        <item
+            android:id="@+id/manageArticles"
+            android:icon="@drawable/administration"
+            android:title="Mange Articles" />
+        <item
+            android:id="@+id/states"
+            android:icon="@drawable/pie_chart"
+            android:title="Stats" />
+        <item
+            android:id="@+id/myProfile"
+            android:icon="@drawable/adminprofile"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/addNewAdmin"
+            android:icon="@drawable/admin"
+            android:title="Add new admin" />
+        <item
+            android:id="@+id/addNewDeliveryMan"
+            android:icon="@drawable/adddelivery_man"
+            android:title="Add new Delivery Man" />
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/logout_icon"/>
+    </group>
+</menu>

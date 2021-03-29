@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".User_admin_deliver">
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="92dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/authenticateAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toAdminLogin"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="6dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/addArticleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/boss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="150dp"
+                    android:text="Admin Space"
+                    android:textColor="#333"
+                    android:textSize="18dp" />
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/authenticateUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toUserLogin"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="6dp"
+            android:clickable="true"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/editArticleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="150dp"
+                    android:text="User Space "
+                    android:textColor="#333"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/authenticateDeliveryMan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toDeliveryLogin"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="6dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/deleteArticleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/delivery_boy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="132dp"
+                    android:text="Delivery Space"
+                    android:textColor="#333"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="144dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="6dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/_productImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/product_image" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/_productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product 1"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#19456b"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="14dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="14dp">
+                    <TextView
+                        android:id="@+id/_productPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="700"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="#16c79b"
+
+
+                        android:layout_marginRight="5dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/_productCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MAD"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="#bbb"
+                        android:textSize="10dp"
+
+
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/_productDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#6d6d64"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="14dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+
+                <ImageView
+                    android:id="@+id/delete"
+                    android:clickable="true"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/delete"
+
+
+                    />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    app:cardCornerRadius="85dp"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/plus"
+                            android:onClick="plus"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_margin="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:src="@drawable/add" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="14dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="1"
+                            android:textColor="#19456b"
+                            android:textSize="14dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/minus"
+                            android:layout_width="30dp"
+                            android:onClick="minus"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_margin="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:src="@drawable/minus" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
